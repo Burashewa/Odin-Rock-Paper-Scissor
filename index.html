@@ -4,8 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock-Paper-Scissor</title>
+    <style>
+        #container{ 
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            margin-left: 300px;
+            margin-right: 300px;
+            padding: 50px;
+            background-color: yellow;
+        }
+        button{
+            width: 150px;
+            height: 50px;
+            color: rgb(231, 226, 238);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 2rem;
+            background-color: rgb(21, 18, 18);
+            border: none;
+            border-radius: 5px; 
+        }
+        button:hover{
+            background-color: rgb(77, 66, 66);
+        }
+        p{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
+    <div id="container">
+        <div id="btn">
+            
+            <button class="rock">Rock</button>
+            <button class="paper">Paper</button>
+            <button class="scissor">Scissor</button>
+            
+        </div>
+    
+        <div id="para">
+            <p class="para"></p>
+            <p class="score"></p>
+        </div>
+        <div>
+            <button onClick="window.location.reload();">Retry</button>
+        </div>
+    </div>
+    
     
     <script src="script.js"></script>
 </body>
