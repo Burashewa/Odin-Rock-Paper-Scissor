@@ -43,7 +43,7 @@ function playRound(humanChoise, computerChoise){
 
     if(humanScore == 5 || computerScore == 5){
         para.textContent = "Game Over!"
-        score.textContent = `Computer Score : ${computerScore} || Your Score : ${humanScore}`;
+        score.textContent = `Computer Score : ${computerScore} || Your Score : ${humanScore}`; 
     }
 
     else if (humanChoise ==="Rock" & computerChoise === "Paper"){
