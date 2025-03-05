@@ -47,7 +47,7 @@ function playRound(humanChoise, computerChoise){
     }
 
     else if (humanChoise ==="Rock" & computerChoise === "Paper"){
-        para.textContent = "You won! Rock beats Paper";
+        para.textContent = "You loss! Paper beats Rock";
         humanScore += 1;
 
         score.textContent = `Computer Score : ${computerScore} || Your Score : ${humanScore}`;
@@ -61,7 +61,7 @@ function playRound(humanChoise, computerChoise){
     } 
 
     else if(humanChoise ==="Paper" & computerChoise === "Rock"){
-        para.textContent = "You lose! Rock beats Paper";
+        para.textContent = "You Win! Paper beats Rock";
         computerScore += 1;
 
         score.textContent = `Computer Score : ${computerScore} || Your Score : ${humanScore}`;
@@ -90,7 +90,7 @@ function playRound(humanChoise, computerChoise){
     }
 
     else if(humanChoise === computerChoise){
-        para.textContent = "Drow! play again";
+        para.textContent = "Draw! play again";
         score.textContent = `Computer Score : ${computerScore} || Your Score : ${humanScore}`;
         
     }   
