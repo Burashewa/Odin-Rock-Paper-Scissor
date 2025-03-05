@@ -48,7 +48,7 @@ function playRound(humanChoise, computerChoise){
 
     else if (humanChoise ==="Rock" & computerChoise === "Paper"){
         para.textContent = "You loss! Paper beats Rock";
-        humanScore += 1;
+        computerScore += 1;
 
         score.textContent = `Computer Score : ${computerScore} || Your Score : ${humanScore}`;
     }    
@@ -62,7 +62,7 @@ function playRound(humanChoise, computerChoise){
 
     else if(humanChoise ==="Paper" & computerChoise === "Rock"){
         para.textContent = "You Win! Paper beats Rock";
-        computerScore += 1;
+        humanScore += 1;
 
         score.textContent = `Computer Score : ${computerScore} || Your Score : ${humanScore}`;
 
